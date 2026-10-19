@@ -1,8 +1,82 @@
 
+:root {
+    --orange: #d5360c;
+    --black: #101010;
+    --white: #e6d5bd;
+
+    --heading-font: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+}
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+}
+
+
+#hero {
+    background-color: var(--orange);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#hero .bg-text {
+    position: absolute;
+    /* top: 5rem; */
+    width: 100%;
+    text-align: center;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    font-family: var(--heading-font);
+    font-size: 7rem;
+    font-weight: 900;
+    color: var(--white);
+    /* letter-spacing: 8px; */
+    z-index: 1;
+}
+
+#hero .main-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /*👉 top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);👈*/
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .main-img img {
+    height: 80%;
+}
+
+#hero .name-text {
+    /*👉height: 100vh;
+    width: 100vw;👈*/
+    position: absolute;
+    text-align: center;
+    /* background-color: cornflowerblue; */
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+   /*👉 display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;👈*/
+
+    font-family: var(--heading-font);
+    font-size: 10rem;
+    color: var(--white);
 }
