@@ -5,6 +5,7 @@
     --white: #e6d5bd;
 
     --heading-font: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 *,
@@ -16,8 +17,25 @@
 }
 
 header {
-    position: absolute;
+    position: fixed;
+    left: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    color: var(--black);
 }
+
+.divider {
+    height: 250px; 
+  
+    background: linear-gradient(
+        to bottom, 
+        var(--orange) 0%,     
+        #a02b0a 35%,
+        #451305 70%,
+        var(--black) 100%
+    );
+}
+
 
 
 #hero {
@@ -79,4 +97,33 @@ header {
     font-family: var(--heading-font);
     font-size: 10rem;
     color: var(--white);
+}
+
+.title {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+}
+
+#about .title {
+    color: var(--orange);
+}
+
+#about .about-text {
+    font-size: 1.5rem;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: justify;
+}
+
+#about .about-text .highlight {
+    color: var(--orange);
 }
