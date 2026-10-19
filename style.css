@@ -202,3 +202,11 @@ header {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+}
