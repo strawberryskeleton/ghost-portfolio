@@ -2,6 +2,7 @@
 :root {
     --orange: #d5360c;
     --black: #101010;
+    /* --black: #181818; */
     --white: #e6d5bd;
 
     --heading-font: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
@@ -33,6 +34,18 @@ header {
         #a02b0a 35%,
         #451305 70%,
         var(--black) 100%
+    );
+}
+
+.reverse-divider {
+    height: 250px; 
+  
+    background: linear-gradient(
+        to bottom, 
+        var(--black) 0%,     
+        #451305 35%,
+        #a02b0a 70%,
+        var(--orange) 100%
     );
 }
 
@@ -109,7 +122,7 @@ header {
 #about {
     background-color: var(--black);
     color: var(--white);
-    padding: 2rem;
+    padding: 4rem;
 }
 
 #about .title {
@@ -126,4 +139,66 @@ header {
 
 #about .about-text .highlight {
     color: var(--orange);
+}
+
+
+
+#projects {
+    background-color: var(--orange);
+    padding: 5rem;
+}
+
+#projects .title {
+    color: var(--white);
+}
+
+#projects .projects-grid {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    /* margin-bottom: 5rem; */
+    /*👉
+    background-color: cornflowerblue;👈*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+#projects .projects-grid .project {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1rem;
+    /* min-height: 10rem; */
+    width: 30%;
+}
+
+#projects .projects-grid .project .project-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px dashed var(--black);
+    /* height: 10rem; */
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+}
+
+#projects .projects-grid .project .project-img img {
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+}
+
+#projects .projects-grid .project .project-name {
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    color: var(--orange);
+    margin-bottom: 0.75rem;
+    padding: 0 1rem;
+}
+
+#projects .projects-grid .project .project-desc {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
 }
